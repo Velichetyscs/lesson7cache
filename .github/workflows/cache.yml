@@ -16,6 +16,6 @@ jobs:
             ${{ runner.os }}-pip-
       - run: pip install -r requirements.txt
       - name: confirm cache
-        if: steps.generae Cache.outputs.cache-hit == 'true'
+        if: steps.generateCache.outputs.cache-hit == 'true'
         run: echo cache entry found!
             
